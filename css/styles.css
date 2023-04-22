@@ -23,9 +23,9 @@ p {
     margin-bottom: 0;
 }
 .container {
-    width: 1128px;
-    padding-left: 12px;
-    padding-right: 12px;
+    max-width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid tomato;
@@ -33,6 +33,9 @@ p {
 /* INDEX.HTML */
 /* header */
 
+.main-nav {
+    display: flex;
+}
 .header-logo {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
@@ -53,9 +56,7 @@ p {
     padding: 0;
     margin: 0;
 }
-.nav {
-    display: flex;
-}
+
 .nav-item {
     color: var(--title-text-color);
     font-weight: 500;
