@@ -137,6 +137,9 @@ color: var(--ocean-color);
     padding-left: 156px;
     padding-right: 156px;
 }
+.info-list {
+    display: flex;
+}
 .info-title {
     margin-top: 0;
     margin-bottom: 8px;
