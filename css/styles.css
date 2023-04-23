@@ -33,9 +33,17 @@ p {
 /* INDEX.HTML */
 /* header */
 
+.nav-container {
+    display: flex;
+}
+
 .main-nav {
     display: flex;
 }
+.header-nav {
+    display: flex;
+}
+
 .header-logo {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
@@ -65,11 +73,11 @@ p {
 .nav-item:focus {
 color: var(--ocean-color);
 }
+.contacts-list {
+    display: flex;
+}
 .contacts {
     font-style: normal;
-}
-.contacts.list {
-    display: flex;
 }
 .contacts-link {
     color: var(--primary-text-color);
@@ -82,6 +90,8 @@ color: var(--ocean-color);
 .hero {
     background-color: var(--title-text-color);
     text-align: center;
+    padding-top: 180px;
+    padding-bottom: 180px;
 }
 
 .hero-title {
@@ -203,8 +213,6 @@ color: var(--ocean-color);
 }
 
 .footer-logo {
-    /* display: inline-block; */
-    /* margin-bottom: 17.5; */
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
         font-weight: 800;
