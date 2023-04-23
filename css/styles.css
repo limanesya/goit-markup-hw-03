@@ -26,8 +26,7 @@ p {
     max-width: 1128px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     outline: 2px solid tomato;
 }
 /* INDEX.HTML */
@@ -42,9 +41,12 @@ p {
 }
 .header-nav {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
 }
-
 .header-logo {
+    margin-right: 76px;
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 800;
@@ -64,6 +66,9 @@ p {
     padding: 0;
     margin: 0;
 }
+.main-nav-item:not(:last-child) {
+    margin-right: 40px;
+}
 
 .nav-item {
     color: var(--title-text-color);
@@ -75,9 +80,14 @@ color: var(--ocean-color);
 }
 .contacts-list {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .contacts {
     font-style: normal;
+}
+.contact-item:not(:last-child) {
+    margin-right: 40px;
 }
 .contacts-link {
     color: var(--primary-text-color);
@@ -90,13 +100,16 @@ color: var(--ocean-color);
 .hero {
     background-color: var(--title-text-color);
     text-align: center;
-    padding-top: 180px;
-    padding-bottom: 180px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
+    width: 496px;
     margin-top: 0px;
     margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
     
     color: var(--background-color);
     font-weight: 700;
@@ -143,12 +156,18 @@ color: var(--ocean-color);
 .info-title {
     margin-top: 0;
     margin-bottom: 8px;
+    margin-right: 0;
     color: var(--title-text-color);
     letter-spacing: 0.02em;
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
 }
+.info-text {
+    width: 264px;
+    margin-right: 24px;
+}
+
 
 /* works section */
 .works-title {
@@ -161,7 +180,12 @@ color: var(--ocean-color);
         text-align: center;
         text-transform: capitalize;
 }
-
+.works-list {
+display: flex;
+}
+.works-img:not(:last-child) {
+    margin-right: 24px;
+}
 /* Team */
 .team {
     padding-top:120px;
@@ -179,9 +203,16 @@ color: var(--ocean-color);
         text-transform: capitalize;
         letter-spacing: 0.02em;
 }
+.team-list {
+    display: flex;
+}
 .team-img {
+    margin-right: 24px;
     margin-bottom: 32px;
 }
+    .team-img:not(:last-child) {
+    margin-right: 24px;
+    }
 .team-list-title {
     margin-bottom: 8px;
     color:var(--title-text-color);
@@ -243,6 +274,10 @@ color: var(--ocean-color);
         letter-spacing: 0.02em;
 }
 
+.portfolio-btn-list {
+    display: flex;
+    justify-content: center;
+}
 .portfolio-btn {
     background-color: var(--secondary-white-color);
     color: var(--accent-color);
