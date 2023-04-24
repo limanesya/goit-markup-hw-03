@@ -344,8 +344,8 @@ display: flex;
 }
 .portfolio-container {
     padding: 32px 16px;
-    border-top: none;
     border: 1px solid var(--header-border-color);
+    border-top: none;
 }
 .portfolio-list-title {
     margin-bottom: 8px;
