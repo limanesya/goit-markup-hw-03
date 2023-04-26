@@ -18,7 +18,7 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
-p {
+h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -43,8 +43,6 @@ p {
 .header-nav {
     display: flex;
     justify-content: flex-start;
-    padding-top: 24px;
-    padding-bottom: 24px;
     align-items: center;
 }
 .header-logo {
@@ -73,6 +71,7 @@ p {
 }
 
 .nav-item {
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
     color: var(--title-text-color);
@@ -84,8 +83,6 @@ color: var(--ocean-color);
 }
 .contacts-list {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
     gap: 40px;
     
 }
@@ -94,6 +91,9 @@ color: var(--ocean-color);
     font-style: normal;
 }
 .contacts-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--primary-text-color);
 }
 .contacts-link:hover,
